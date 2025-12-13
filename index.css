@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    color: #1e1e1e;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
+.page-1{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem 1rem 2rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a:not(.logo){
+    text-decoration: none;
+    color: #1e1e1e;
+    font-family: "Space Grotesk";
+    letter-spacing: -1.5px;
+    padding-right: 10rem;
+}
+
+.navbar a:hover:not(.logo){
+    border-bottom: solid 1px;
+}
+
+.main-page{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.line-1{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.role{
+    font-family: "Space Grotesk";
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: -1px;
+    padding: 0 5rem 1.2rem 0;
+}
+
+.bold-text{
+    font-family: "Space Grotesk";
+    font-size: 10rem;
+    width: 95%;
+    padding: 0 0 0 3rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.75rem;
+}
+
+.small-text{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 3em;
+    width: 75%;
+    justify-content: space-between;
+    margin: -1rem 0 0 0;
+
+    font-family: "Space Grotesk";
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: -1px;
+}
+
+.small-text p, span{
+    margin: 0;
+}
+
+.role-text{
+    font-weight: 300;
+    color: rgb(125, 125, 125)
+}
+
+.page-2{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.about-me{
+    flex: 1;
+    font-family: "Space Grotesk";
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    color: #1e1e1e;
+
+    flex-basis: 50%;
+    padding-inline: 20rem;
+    padding-top: 10rem;
+}
+
+.abt-me-heading{
+    font-size: 9rem;
+    font-family: "Space Grotesk";
+    font-weight: 600;
+    letter-spacing: -7.5px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding-right: 3rem;
+}
+
+.page-3{
+    display: flex;
+    font-family: "Space Grotesk";
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+}
+
+.experiences-heading{
+    font-size: 9rem;
+    font-weight: 600;
+    letter-spacing: -7.5px;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+}
+
+.experience-cards{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+}
+
+.card{
+    padding: 1rem;
+    width: 25rem;
+}
+
+.number{
+    font-size: 7.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.left{
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+
+.right{
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.card-heading{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 0;
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+}
+
+.card-desc{
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.page-4{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.colab-text{
+    font-family: "Space Grotesk";
+    font-size: 10rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.75rem;
+
+    position: absolute;
+    bottom: 0;
+    padding: 2rem 2rem 4rem 2rem;
+    display: block;
+}
+
+.colab-text p{
+    color: white;
+}
+
+
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem 1rem 2rem;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer a:not(.logo){
+    text-decoration: none;
+    color: white;
+    font-family: "Space Grotesk";
+    letter-spacing: -1.5px;
+    padding-right: 10rem;
+}
+
+footer a:hover:not(.logo){
+    border-bottom: solid 1px;
+}
+
+
+.colab-text p{
+    margin: 0;
+}

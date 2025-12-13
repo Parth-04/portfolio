@@ -2,6 +2,7 @@
     box-sizing: border-box;
     color: #1e1e1e;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -17,6 +18,8 @@ body{
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .navbar{
@@ -106,6 +109,8 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 
@@ -139,6 +144,8 @@ body{
     height: 100vh;
     position: relative;
     flex-direction: column;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .experiences-heading{
@@ -206,6 +213,8 @@ body{
     justify-content: flex-end;
     background-color: #1e1e1e;
     color: white;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .colab-text{
@@ -238,6 +247,8 @@ footer{
     left: 0;
     width: 100%;
     z-index: 1000;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 footer a:not(.logo){

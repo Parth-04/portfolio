@@ -1,8 +1,10 @@
 *{
     box-sizing: border-box;
-    color: #1e1e1e;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+}
+
+html{
+    /* scroll-snap-type: y mandatory; */
 }
 
 body{
@@ -15,6 +17,7 @@ body{
 
 .page-1{
     height: 100dvh;
+    color: #1e1e1e;
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
@@ -35,6 +38,12 @@ body{
     left: 0;
     width: 100%;
     z-index: 1000;
+
+    transition: transform 0.3s ease-in-out, background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.navbar-up{
+    transform: translateY(-100%);
 }
 
 .navbar a:not(.logo){
@@ -43,10 +52,47 @@ body{
     font-family: "Space Grotesk";
     letter-spacing: -1.5px;
     padding-right: 10rem;
+    align-self: center;
 }
 
 .navbar a:hover:not(.logo){
     border-bottom: solid 1px;
+}
+
+.navbar .logo{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+}
+
+.navbar .logo img{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.navbar .logo .logo-white{
+    opacity: 1;
+}
+
+.navbar .logo .logo-black{
+    opacity: 0;
+}
+
+.navbar.dark-mode-nav{
+    background-color: #1e1e1e; 
+}
+
+.navbar.dark-mode-nav a{
+    color: white !important;
+}
+
+.navbar.dark-mode-nav .logo-white {
+    opacity: 0;
+}
+
+.navbar.dark-mode-nav .logo-black {
+    opacity: 1;
 }
 
 .main-page{
@@ -105,12 +151,14 @@ body{
 
 .page-2{
     display: flex;
+    color: #1e1e1e;
     height: 100vh;
     align-items: center;
     justify-content: center;
     position: relative;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
 }
 
 
@@ -120,7 +168,6 @@ body{
     font-weight: 400;
     font-size: 2rem;
     letter-spacing: -1px;
-    color: #1e1e1e;
 
     flex-basis: 50%;
     padding-inline: 20rem;
@@ -139,6 +186,8 @@ body{
 }
 
 .page-3{
+    background-color: white;
+    color: #1e1e1e;
     display: flex;
     font-family: "Space Grotesk";
     height: 100vh;
@@ -146,6 +195,17 @@ body{
     flex-direction: column;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.page-3.dark-mode{
+    background-color: #1e1e1e !important;
+    color: white !important
+}
+
+.page-2.dark-mode{
+    background-color: #1e1e1e !important;
+    color: white !important
 }
 
 .experiences-heading{

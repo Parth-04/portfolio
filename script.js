@@ -2,6 +2,7 @@ let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 const page3 = document.querySelector('.page-3');
 const page2 = document.querySelector('.page-2');
+const body = document.querySelector('body');
 
 window.addEventListener('scroll', function() {
     
@@ -21,11 +22,13 @@ window.addEventListener('scroll', function() {
             navbar.classList.add('dark-mode-nav')
             page3.classList.add('dark-mode');
             page2.classList.add('dark-mode');
+            body.classList.add('dark-mode');
         }
         else{
             navbar.classList.remove('dark-mode-nav');
             page3.classList.remove('dark-mode');
             page2.classList.remove('dark-mode');
+            body.classList.remove('dark-mode');
         }
     }
 

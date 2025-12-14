@@ -11,6 +11,14 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+body.dark-mode{
+    background-color: #1e1e1e;
+    
 }
 
 
@@ -39,7 +47,7 @@ body{
     width: 100%;
     z-index: 1000;
 
-    transition: transform 0.3s ease-in-out, background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.8s ease-in-out, color 0.5s ease-in-out;
 }
 
 .navbar-up{
@@ -152,13 +160,14 @@ body{
 .page-2{
     display: flex;
     color: #1e1e1e;
+    background-color: transparent;
     height: 100vh;
     align-items: center;
     justify-content: center;
     position: relative;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+    transition: /*background-color 0.5s ease-in-out,*/ color 0.5s ease-in-out;
 }
 
 
@@ -186,7 +195,7 @@ body{
 }
 
 .page-3{
-    background-color: white;
+    background-color: transparent;
     color: #1e1e1e;
     display: flex;
     font-family: "Space Grotesk";
@@ -195,16 +204,18 @@ body{
     flex-direction: column;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    transition: background-color 0.8s ease-in-out, color 0.8s ease-in-out;
+    transition: /*background-color 0.1s ease-in-out,*/ color 0.5s ease-in-out;
 }
 
 .page-3.dark-mode{
-    background-color: #1e1e1e !important;
+    /* background-color: #1e1e1e !important; */
+    /* background-color: transparent; */
     color: white !important
 }
 
 .page-2.dark-mode{
-    background-color: #1e1e1e !important;
+    /* background-color: #1e1e1e !important; */
+    /* background-color: transparent; */
     color: white !important
 }
 
